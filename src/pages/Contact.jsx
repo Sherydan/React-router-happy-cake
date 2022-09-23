@@ -1,20 +1,25 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
-  return (
-    <div>
-        <form action="">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" />
+    return (
+        <div className="contact-container">
+            <form action="">
+                <div>
+                    <p>Email</p>
+                    <input type="email" name="email" id="txtEmail" />
+                </div>
 
-            <label htmlFor="description">Description</label>
-            <input type="text" name="description" id="description" />
+                <div>
+                    <p>Description</p>
+                    <textarea name="description" id="txtDescription" cols="60" rows="10">
 
-            <input type="submit" value="submit" />
+                    </textarea>
+                </div>
 
-        </form>
-    </div>
-  )
-}
+                <input type="submit" value="Send" id="btnSend"/>
+            </form>
+        </div>
+    );
+};
 
-export default Contact
+export default Contact;
